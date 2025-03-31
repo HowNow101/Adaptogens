@@ -20,14 +20,18 @@
 
         .hero {
             text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(160deg, #1a1433 0%, #0b0819 100%);
+            padding: 8rem 2rem 4rem;
+            position: relative;
+            background: linear-gradient(rgba(11, 8, 25, 0.7), rgba(11, 8, 25, 0.7)),
+                        url('https://via.placeholder.com/1920x1080/1a1433/ffffff?text=Spacegoods+Banner') center/cover;
         }
 
         .logo {
             width: 220px;
             margin: 0 auto 2rem;
             display: block;
+            position: relative;
+            z-index: 1;
         }
 
         h1 {
@@ -36,6 +40,8 @@
             background: linear-gradient(45deg, #ff9d72, #ff4274);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            position: relative;
+            z-index: 1;
         }
 
         .cta-button {
@@ -50,6 +56,8 @@
             margin: 2rem 0;
             transition: all 0.3s ease;
             box-shadow: 0 8px 20px rgba(255,66,116,0.3);
+            position: relative;
+            z-index: 1;
         }
 
         .cta-button:hover {
@@ -69,13 +77,9 @@
             text-align: center;
             padding: 2rem;
             border-radius: 15px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .benefit-card:nth-child(4) {
             background: linear-gradient(45deg, #ff4274, #ff9d72);
             color: #0b0819;
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .testimonial {
@@ -96,6 +100,22 @@
             text-align: center;
             padding: 3rem 2rem;
             background: #080512;
+        }
+
+        .article-link {
+            display: inline-block;
+            margin: 2rem 0;
+            padding: 1rem 2rem;
+            color: #ff9d72;
+            border: 2px solid #ff4274;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .article-link:hover {
+            background: #ff4274;
+            color: white;
         }
 
         .social-links {
@@ -129,16 +149,21 @@
             .cta-button {
                 padding: 1rem 2rem;
             }
+            
+            .hero {
+                padding: 6rem 2rem 3rem;
+            }
         }
     </style>
 </head>
 <body>
     <section class="hero">
+        <!-- Replace the placeholder image URL below with your actual banner image -->
         <img src="https://www.spacegoods.com/images/logo.png" alt="Spacegoods" class="logo">
         <h1>Mushroom Coffee That<br>Fuels Your Universe</h1>
         <p>Rainbow Dust Superblend: Jitter-free energy + Laser focus</p>
         
-        <div style="margin: 2rem 0">
+        <div style="margin: 2rem 0; position: relative; z-index: 1">
             <span style="color: #ff4274; font-weight: bold">✨ LIMITED TIME: 20% OFF FIRST ORDER ✨</span>
         </div>
 
@@ -146,7 +171,7 @@
             GET YOUR COSMIC BOOST NOW →
         </a>
 
-        <div style="margin-top: 2rem; font-size: 0.9rem">
+        <div style="margin-top: 2rem; font-size: 0.9rem; position: relative; z-index: 1">
             ⭐⭐⭐⭐⭐ 4.9/5 from 2,000+ cosmic explorers
         </div>
     </section>
@@ -182,6 +207,12 @@
                 GET 20% OFF YOUR COSMIC BOOST →
             </a>
         </div>
+    </section>
+
+    <section style="text-align: center; padding: 2rem; background: #16112b;">
+        <a href="https://hownow101.com/category/adaptogens" class="article-link">
+            Learn More About Adaptogens →
+        </a>
     </section>
 
     <footer>
